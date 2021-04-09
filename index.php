@@ -16,7 +16,7 @@
     <div id="BTEC" class="tabcontent">
         <h3>Btec</h3>
         <p>Trường đại học FPT là một cơ sở kinh doanh giáo dục tại được thành lập ngày 8/9/2006 theo quyết định số 2008/2006/QĐ-TTg của thủ tướng chính phủ.</p>
-        <img class = "featured-image" style="width:300px; height:200px" src= "Images/Logo_BTEC.png" >
+        <img class = "featured-image" style="width:300px; height:200px" src= "Logo_BTEC.png" >
     </div>
     
     <div id="TĐT" class="tabcontent">
