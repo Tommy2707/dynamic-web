@@ -10,19 +10,19 @@
   			}else{
   					// Kiểm tra tài khoản đã tồn tại chưa
   					$sql="select * from menu where menu='$menuname'";
-					$kt=mysqli_query($conn, $sql);
+					$kt=postgresqli_query($conn, $sql);
 
-					if(mysqli_num_rows($kt)  > 0){
+					if(postgresqli_num_rows($kt)  > 0){
 						echo "Menu đã tồn tại";
 					}else{
 						//thực hiện việc lưu trữ dữ liệu vào db
-	    				$sql = "INSERT INTO menu(
+	    				$sql = "INSERT INTO Menu(
 	    					menu
 	    					) VALUES (
 	    					'$menuname'
 	    					)";
 					    // thực thi câu $sql với biến conn lấy từ file connection.php
-   						mysqli_query($conn,$sql);
+   						postgresqli_query($conn,$sql);
 				   		echo "Thêm menu thành công";
 					}
 									    
