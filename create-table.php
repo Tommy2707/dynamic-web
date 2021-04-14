@@ -8,14 +8,14 @@ $password = "78a7dd7415e3cb879d5d99e6a1de69acb74314083261b47dc56afd38cabddb06";
 $dbConn = new postgresqli($host, $port, $dbname, $user, $password);
 //Check connection
 if ($dbConn->connect_error){
-  die("Connection failed: " . $dbConn->connect-error");
+  die("Connection failed: " . $dbConn->connect-error);
 }
 //postgresql to create table
 $postgresql = "CREATE TABLE Menu (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 menu VARCHAR(30) NOT NULL
 )";
-if($dbConn->query($postgresql) === TRUE{
+if($dbConn->query($postgresql) === TRUE){
     echo "Table menu created successfully";
 } else {
     echo "Error creating table: ". $dbConn->error;
