@@ -10,15 +10,16 @@ $dbConn = new postgresqli($host, $port, $dbname, $user, $password);
 if ($dbConn->connect_error){
   die("Connection failed: " . $dbConn->connect-error);
 }
-//postgresql to create table
+//sql to create table
 $postgresql = "CREATE TABLE Menu (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-menu VARCHAR(30) NOT NULL
-)";
-if($dbConn->query($postgresql) === TRUE){
-    echo "Table menu created successfully";
-} else {
-    echo "Error creating table: ". $dbConn->error;
-}
-$conn->close();
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    menu VARCHAR(30) NOT NULL
+    )";
+    
+    if($dbConn->query($postgresql) === TRUE){
+        echo "Table menu created successfully";
+    } else {
+        echo "Error creating table: " . $dbConn->error;
+    }
+    $dbConn->close();
 ?>
