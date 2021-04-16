@@ -78,9 +78,23 @@
   evt.currentTarget.className += " active";
 }
     </script>
-     <?php
-     
-     ?>
+   <?php
+     	$sql =<<<EOF
+      	CREATE TABLE Menu
+      	(ID INT PRIMARY KEY     NOT NULL,
+     	NAME           TEXT    NOT NULL,
+      	);
+EOF;
+
+   	$ret = pg_query($db, $sql);
+   	if(!$ret) {
+      	 echo pg_last_error($db);
+   	} else {
+      	 echo "Table created successfully\n";
+   	}
+   	pg_close($db);
+   
+	?>
     
 </body>
 </html>
