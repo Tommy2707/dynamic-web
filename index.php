@@ -78,7 +78,7 @@
   evt.currentTarget.className += " active";
 }
     </script>
-   /*
+   
    <?php
       $sql =<<<EOF
          CREATE TABLE Menu
@@ -93,7 +93,7 @@
       	 echo "Table created successfully\n";
       }
       pg_close($db);
-    ?> */
+    ?> 
     
     <?php
       $sql =<<<EOF
