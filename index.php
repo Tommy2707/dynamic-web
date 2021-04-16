@@ -80,7 +80,7 @@
     </script>
    
    <?php
-   
+   /*
       $sql =<<<EOF
          CREATE TABLE Menu
          (ID INT PRIMARY KEY     NOT NULL,
@@ -94,11 +94,11 @@
       	 echo "Table created successfully\n";
       }
       pg_close($db);
-    
+    */
     ?>
     
     <?php
-    /*
+    
       $sql =<<<EOF
       INSERT INTO Menu 
       VALUES (1, 'BTEC');
@@ -123,7 +123,7 @@ EOF;
       echo "Records created successfully\n";
    }
    pg_close($db);
-    */
+    
     ?>
     
     <?php
