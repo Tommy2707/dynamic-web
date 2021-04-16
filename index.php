@@ -80,7 +80,7 @@
     </script>
    
    <?php
-   /*
+   
       $sql =<<<EOF
          CREATE TABLE Menu
          (ID INT PRIMARY KEY     NOT NULL,
@@ -94,7 +94,7 @@
       	 echo "Table created successfully\n";
       }
       pg_close($db);
-    */
+    
     ?>
     
     <?php
